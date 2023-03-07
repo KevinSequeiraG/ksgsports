@@ -1,0 +1,822 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    cursor: default;
+}
+
+html {
+    font: 1em/1.5 "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+body {
+    font-size: 1.3em;
+}
+
+header {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(/imagenes/background-header.jfif) center no-repeat;
+    /* Image Credit: Unsplash.me */
+    background-size: cover;
+}
+
+header .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    font-family: 'Pacifico', cursive;
+}
+
+.content i {
+    font-family: 'Pacifico', cursive;
+    color: rgb(57, 42, 45);
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    font-size: 1.5rem;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h2 {
+    text-transform: uppercase;
+    margin-top: -.5em;
+}
+
+header hgroup {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(57, 42, 45);
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+    padding: .5em 3em;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #333 center no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0;
+}
+
+img {
+    margin-right: 20px
+}
+
+.site {
+    padding: 10em 0 20em 0;
+    text-align: center;
+    background-color: #efefef;
+    font-size: .8em;
+    color: #444;
+    position: relative;
+    background-image: linear-gradient(to left, rgb(66, 44, 48) 0%, #000 100%);
+}
+
+.navegador {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*KSG*/
+
+hgroup i {
+    font-family: 'Khand', sans-serif;
+}
+
+hgroup img {
+    align-content: center;
+    width: 250px;
+    height: 250px;
+}
+
+.navegador ul li {
+    font-size: 25px;
+    height: 100%;
+    font-family: 'Khand', sans-serif;
+}
+
+.cuerpo {
+    margin: 0 15em;
+}
+
+hgroup h1 {
+    font-size: 4rem;
+}
+
+.quitarfondo {
+    filter: brightness();
+    mix-blend-mode: multiply;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+    vertical-align: middle;
+    border: dashed white 5px;
+    background-color: rgb(66, 44, 48);
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+}
+
+.nave {
+    background-image: linear-gradient(to left, rgb(66, 44, 48) 0%, #000 100%);
+    border-bottom: solid 2px gray;
+    border-top: solid 2px gray;
+}
+
+.ContenedorOpciones {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: lightgray;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.ContenedorOpciones div {
+    width: 493PX;
+    padding: 1rem;
+    border: solid 1px white;
+    margin: 10px;
+    position: relative;
+    height: 500px;
+    text-align: center;
+}
+
+.ContenedorOpciones p {
+    padding-bottom: 1rem;
+}
+
+.ContenedorOpciones img {
+    width: 400px;
+}
+
+.ContenedorOpciones a {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.content-galeria {
+    color: lightgray;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: solid 1px white;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.content-galeria a {
+    margin-top: 20px;
+}
+
+footer {
+    background-image: linear-gradient(to left, rgb(66, 44, 48) 0%, #000 100%);
+    color: #efefef;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+form {
+    text-align: left;
+}
+
+.carrusel {
+    margin: 0 auto;
+}
+
+.carrusel img {
+    width: 75%;
+}
+
+.lightbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.lightbox img {
+    width: 70rem;
+    display: block;
+    margin: auto;
+}
+
+.lightbox .caption {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #eee;
+}
+
+.cuerpo-galeria hr {
+    margin-top: 6rem;
+    color: white;
+}
+
+.cuerpo-galeria h1 {
+    margin-top: 4rem;
+}
+
+.cuerpo-galeria h3 {
+    margin-top: 2rem;
+}
+
+.galeria {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.galeria img {
+    width: 20rem;
+    height: 20rem;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.galeria img:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+.about-us {
+    color: #efefef;
+}
+
+.about-us p {
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.info-creador {
+    margin-top: 7rem;
+    border: #444 solid 2px;
+    text-align: left;
+    position: relative;
+    height: 203px;
+    padding: 20px;
+    color: #eee;
+}
+
+.info-creador img {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.contact-us {
+    color: #efefef;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    align-content: center;
+}
+
+.contact-us p {
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.form-contact {
+    border: 2px solid #efefef;
+    padding: 3.5rem;
+    border-radius: 3%;
+    width: 50rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    position: relative;
+}
+
+/*
+.form-contact div {
+    margin-top: 2rem;
+    width: 290px;
+    display: inline-block;
+}
+
+.form-contact .form-labels label {
+    margin-bottom: 27px;
+    display: block;
+}
+
+.form-contact div input {
+    margin-bottom: 24px;
+}
+*/
+#fechNac {
+    width: 316px;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 5rem;
+    font-size: 35px;
+}
+
+#grado_academico {
+    cursor: pointer;
+}
+
+/*Pagina de consejos*/
+.contenido-consejos {
+    color: #efefef;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.content-consejos ul {
+    text-align: left;
+}
+
+.contenedor-deportes>div {
+    background-color: black;
+    border: white 1px solid;
+    margin: 10px;
+    color: #efefef;
+}
+
+/*Rutinas de ejercicios*/
+.contenido-rutinas img {
+    width: 100px;
+}
+
+.labels {
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    display: none;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+    white-space: nowrap;
+    z-index: 9999999;
+    position: relative
+}
+
+/*Contenido de boxeo*/
+.content-box {
+    font-size: 1.8rem;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.content-box h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.content-box h4 {
+    font-size: 2.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+/*Contenido baloncesto*/
+.content-baloncesto {
+    font-size: 1.4rem;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.content-baloncesto hr {
+    margin-top: 5rem;
+}
+
+.content-baloncesto h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.content-baloncesto h4 {
+    font-size: 2.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+/*Contenido de Voleibol*/
+
+.content-volei {
+    font-size: 1.4rem;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.content-volei h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.content-volei h4 {
+    font-size: 2.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.content-volei h6 {
+    font-size: 2.1rem;
+    margin-top: 2rem;
+}
+
+
+/*Contenido Natacion*/
+
+.content-natacion {
+    font-size: 1.4rem;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.content-natacion h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.content-natacion h4 {
+    font-size: 2.8rem;
+    margin-top: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.content-natacion .card {
+    text-align: center;
+    margin: 0 2rem;
+    color: #efefef;
+    background-color: #333;
+}
+
+.content-natacion hr {
+    margin-top: 4rem;
+}
+
+/*Contenido Futbol*/
+
+.content-futbol {
+    font-size: 1.4rem;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.content-futbol h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.content-futbol h4 {
+    font-size: 2.8rem;
+    margin-top: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.content-futbol hr {
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 1629px) {
+    .ContenedorOpciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        color: lightgray;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .ContenedorOpciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        color: lightgray;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-us {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-us p {
+        font-size: 1.7rem;
+    }
+
+    .contact-us {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .lightbox img {
+        width: 50rem;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 1258px) {
+    .cuerpo {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ContenedorOpciones {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    .ContenedorOpciones div {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
+        vertical-align: middle;
+        border: dashed white 5px;
+        background-color: rgb(66, 44, 48);
+    }
+
+    .logo img {
+        height: 75px;
+        width: 75px;
+    }
+
+    hgroup h1 {
+        font-size: 2rem;
+    }
+
+    .logo i {
+        font-size: 15px;
+    }
+
+    .content-galeria {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .content-box {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-baloncesto {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-volei {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-natacion {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-futbol {
+        font-size: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-box h1 {
+        font-size: 3rem;
+    }
+
+    .content-baloncesto h1 {
+        font-size: 3rem;
+    }
+
+    .content-volei h1 {
+        font-size: 3rem;
+    }
+
+    .content-natacion h1 {
+        font-size: 3rem;
+    }
+
+    .content-futbol h1 {
+        font-size: 3rem;
+    }
+
+    .content-box h4 {
+        font-size: 1.5rem;
+    }
+
+    .content-baloncesto h4 {
+        font-size: 1.5rem;
+    }
+
+    .content-volei h4 {
+        font-size: 1.5rem;
+    }
+
+    .content-natacion h4 {
+        font-size: 1.5rem;
+    }
+
+    .content-futbol h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .form-contact {
+        width: 80%;
+    }
+
+    .lightbox img {
+        width: 40rem;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .videos iframe {
+        width: 80%;
+    }
+
+    .info-creador {
+        height: 440px;
+        text-align: center;
+    }
+
+    .info-creador img {
+        margin: 0 auto;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .form-contact {
+        font-size: 1.3rem;
+    }
+
+    #fechNac {
+        width: 189px;
+    }
+
+    .lightbox img {
+        width: 30rem;
+        display: block;
+        margin: auto;
+    }
+
+    .info-creador {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact-us p {
+        font-size: 1.5rem;
+    }
+
+    .lightbox img {
+        width: 27rem;
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    .ContenedorOpciones img {
+        width: 85%;
+    }
+
+    .form-contact {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .lightbox img {
+        width: 20rem;
+        display: block;
+        margin: auto;
+    }
+
+    .contenido-rutinas img {
+        width: 50px;
+        margin-right: 0px;
+    }
+
+    .contenido-rutinas td,
+    th {
+        font-size: 10px;
+        padding: 2px !important;
+    }
+}
